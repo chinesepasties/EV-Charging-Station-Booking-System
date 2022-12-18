@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>EV CHARGING STATION FINDER</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="landing-interact">
+        <div class="navbar">
+          <div class="branding">
+            <div><img class="logo" src="./src/images/76731426.webp" /></div>
+            <div class="logo-title">EV GO</div>
+          </div>
+          
+                <div class="links">
+                    <div>
+                        <button class="nav-button login">Login</button>
+                    </div>
+                    <div>
+                        <button class="nav-button sign">Sign up</button>
+                    </div>
+                </div>
+               
+        </div>
+        <div class="title">
+          <div id="typewriter" class="changing"></div>
+          <div class="sub-title">Find the nearest charging station to fuel your long rides.</div>
+        </div>
+        <div class="search">
+          <input class="search-bar" type="text" placeholder="Enter your location">
+          <a id="search" href="#"
+            ><button
+              disabled
+              id="search-button"
+              class="search-bar search-submit"
+              type="submit"
+            >
+              Search
+            </button></a>
+          <script>
+            function updateSelection() {
+              console.log("lol");
+              if (document.getElementById("selection").value == "") {
+                document.getElementById("search-button").disabled = true;
+              } else {
+                document.getElementById("search-button").disabled = false;
+              }
+            }
+          </script>
+        </div>
+        <div class=" stations ">
+          <div class="stations-title">STATIONS AVAILABLE IN TRIVANDRUM</div>
+          <div class="stations-sub-title">
+            Vikas Bhavan, Thycaud, East Fort, Shangumugham, Statue, Palayam, Bakery Jn, Kowdiar &
+            Nalanchira
+          </div>
+        </div>
+      </div>
+      <div class="landing-images ">
+        <img class="landing-image " src="./src/images/electric-car-charging-station-cartoon-illustration_133260-610.webp " />
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/Electric_car_icon.png" /></div>
+        <div class="feature-title">eV GO</div>
+        <div class="feature-desc">
+          Replenish your car's power with ease.
+        </div>
+      </div>
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/ice-cream.png" /></div>
+        <div class="feature-title">Close To You</div>
+        <div class="feature-desc">
+          Get to know your nearest charging station.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const alertFunction = () => {
+        window.alert("App is in development... or is it?");
+      };
+    </script>
+    <script src="./src/js/core.js"></script>
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Drained battery?",
+          "Looking for a recharge?",
+          "Vacation trip with friends?"
+        ],
+        autoStart: true,
+        loop: true
+      });
+    </script>
+  </body>
+</html>
